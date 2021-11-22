@@ -1,3 +1,58 @@
 .bar {
   fill: green;
 }
+
+body {
+	background: lightblue;
+	position: relative;
+	height: 100vh;
+}
+button {
+	outline: 0px;
+	border: 0px;
+	cursor: pointer;
+	outline-style: none;
+}
+path {
+	stroke: white;
+	stroke-width: 0.5px;
+	fill: #ebebe0;
+}
+
+#float-button-group {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	opacity: 0.5;
+	display: flex;
+	flex-direction: column;
+}
+
+#float-button-group:hover {
+	opacity: 1;
+}
+.svg-icon {
+	width: 1.5em;
+	height: 1.5em;
+}
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+	fill: #333;
+}
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	padding: 0.4rem;
+}
+.tooltip {
+	position: absolute;
+	text-align: center;
+	padding: 12px;
+	font: 15px sans-serif;
+	background: lightsteelblue;
+	border-radius: 11px;
+	border-radius: 8px;
+	pointer-events: none;
+}
