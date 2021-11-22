@@ -65,7 +65,7 @@ d3
 
 
 // example 2
-const svg = d3.select("#d3_demo_2").attr("viewBox", [0, 0, width, height]);
+const svg_2 = d3.select("#d3_demo_2").attr("viewBox", [0, 0, width, height]);
 
 // add title
 svg_2
