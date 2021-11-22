@@ -63,3 +63,105 @@ d3
 		svg_1.append("g").attr("transform", `translate(${margin.left},0)`).call(y_axis);
 	});
 
+
+// example 2
+const svg = d3.select("#d3_demo_2").attr("viewBox", [0, 0, width, height]);
+
+// add title
+svg_2
+	.append("text")
+	.attr("x", width / 1.4)
+	.attr("y", `${height - 20}`)
+	.style("font-size", "20x")
+	.style("text-decoration", "underline")
+	.text("Map of Nigeria and it's states ");
+
+let projection = d3.geoEquirectangular().center([0, 0]);
+const pathGenerator = d3.geoPath().projection(projection);
+
+let g = svg_2.append("g");
+
+let tooltip = d3
+	.select("body")
+	.append("div")
+	.attr("class", "tooltip")
+	.style("opacity", 0);
+
+Promise.all([
+	d3.json(
+		"https://raw.githubusercontent.com/iamspruce/intro-d3/main/data/nigeria_state_boundaries.geojson"
+	),
+	d3.json(
+		"https://raw.githubusercontent.com/iamspruce/intro-d3/main/data/nigeria-states.json"
+	)
+]).then(([topoJSONdata, countryData]) => {
+	countryData.data.forEach((d) => {
+		d.info.Longitude = +d.info.Longitude;
+		d.info.Latitude = +d.info.Latitude;
+	});
+	projection.fitSize([width, height], topoJSONdata);
+	g.selectAll("path")
+		.data(topoJSONdata.features)
+		.join("path")
+		.attr("class", "country")
+		.attr("d", pathGenerator);
+
+	g.selectAll("circle")
+		.data(countryData.data)
+		.join("circle")
+		.attr("cx", (d) => projection([d.info.Longitude, d.info.Latitude])[0])
+		.attr("cy", (d) => projection([d.info.Longitude, d.info.Latitude])[1])
+		.attr("r", 5)
+		.style("fill", "green")
+		.on("mouseover", function (event, d) {
+			tooltip.transition().duration(200).style("opacity", 0.9);
+			tooltip
+				.html(`<p>Population: ${d.info.Population}</a>` + `<p>Name: ${d.Name}</p>`)
+				.style("left", event.pageX + "px")
+				.style("top", event.pageY - 28 + "px");
+		})
+		.on("mouseout", function (d) {
+			tooltip.transition().duration(500).style("opacity", 0);
+		});
+
+	g.selectAll("text")
+		.data(countryData.data)
+		.join("text")
+		.attr("x", (d) => projection([d.info.Longitude, d.info.Latitude])[0])
+		.attr("y", (d) => projection([d.info.Longitude, d.info.Latitude])[1])
+		.attr("dy", -7)
+		.style("fill", "black")
+		.style("font-size", "18px")
+		.attr("text-anchor", "middle")
+		.text((d) => d.Name);
+
+	let zooming = d3
+		.zoom()
+		.scaleExtent([1, 8])
+		.extent([
+			[0, 0],
+			[width, height]
+		])
+		.on("zoom", function (event) {
+			g.selectAll("path").attr("transform", event.transform);
+			g.selectAll("circle")
+				.attr("transform", event.transform)
+				.attr("r", 5 / event.transform.k);
+			g.selectAll("text")
+				.attr("transform", event.transform)
+				.style("font-size", `${18 / event.transform.k}`)
+				.attr("dy", -7 / event.transform.k);
+		});
+
+	svg_2.call(zooming);
+
+	d3.select("#zoomIn").on("click", () => {
+		svg_2.transition().call(zooming.scaleBy, 2);
+	});
+	d3.select("#zoomOut").on("click", () => {
+		svg_2.transition().call(zooming.scaleBy, 0.5);
+	});
+	d3.select("#resetZoom").on("click", () => {
+		svg_2.transition().call(zooming.scaleTo, 0);
+	});
+});
