@@ -2,10 +2,9 @@
   fill: green;
 }
 
-body {
+.map {
 	background: lightblue;
 	position: relative;
-	height: 100vh;
 }
 button {
 	outline: 0px;
