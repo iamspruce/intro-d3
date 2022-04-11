@@ -7,7 +7,9 @@
     "Currency": "Algerian dinar",
     "Country Flag": "🇩🇿",
     "Internet users": 4700000,
-    "Population": 38813722
+    "Population": 38813722,
+    "lat": 28.033886,
+    "long": 1.659626
   },
   {
     "Country Name": "Angola",
@@ -17,7 +19,9 @@
     "Currency": "Angolan kwanza",
     "Country Flag": "🇦🇴",
     "Internet users": 606700,
-    "Population": 19088106
+    "Population": 19088106,
+    "lat": 	-11.202692,
+    "long": 17.873887
   },
   {
     "Country Name": "Benin",
@@ -27,7 +31,9 @@
     "Currency": "West African CFA franc",
     "Country Flag": "🇧🇯",
     "Internet users": 200100,
-    "Population": 10160556
+    "Population": 10160556,
+    "lat": 	9.30769,
+    "long": 2.315834
   },
   {
     "Country Name": "Botswana",
@@ -37,7 +43,9 @@
     "Currency": "Botswana pula",
     "Country Flag": "🇧🇼",
     "Internet users": 120000,
-    "Population": 2155784
+    "Population": 2155784,
+    "lat": 	-22.328474,
+    "long": -22.328474
   },
   {
     "Country Name": "Burkina Faso",
@@ -47,7 +55,9 @@
     "Currency": "West African CFA franc",
     "Country Flag": "🇧🇫",
     "Internet users": 178100,
-    "Population": 18365123
+    "Population": 18365123,
+    "lat": 	12.238333,
+    "long": -1.561593
   },
    {
     "Country Name": "Burundi",
@@ -57,7 +67,9 @@
     "Currency": "Burundi franc",
     "Country Flag": "🇧🇮",
     "Internet users": 157800,
-    "Population": 10395931
+    "Population": 10395931,
+    "lat": 	-3.373056,
+    "long": 29.918886
   },
    {
     "Country Name": "Cabo Verde",
@@ -67,7 +79,9 @@
     "Currency": "Cape Verdean escudo",
     "Country Flag": "🇨🇻",
     "Internet users": 150000,
-    "Population": 538535
+    "Population": 538535,
+    "lat": 	16.002082,
+    "long": -24.013197
   },
   {
     "Country Name": "Cameroon",
@@ -77,7 +91,9 @@
     "Currency": "Central African CFA franc",
     "Country Flag": "🇨🇲",
     "Internet users": 749600,
-    "Population": 23130708
+    "Population": 23130708,
+    "lat": 	16.002082,
+    "long": -24.013197
   },
   {
     "Country Name": "Central African Republic",
