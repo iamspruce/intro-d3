@@ -1,5 +1,5 @@
-{
-  "DZ": {
+[
+  {
     "Country Name": "Algeria",
     "Calling Code": 213,
     "Official Language": "Arabic",
@@ -9,7 +9,7 @@
     "Internet users": 4700000,
     "Population": 38813722
   },
-  "AO": {
+  {
     "Country Name": "Angola",
     "Calling Code": 244,
     "Official Language": "Portuguese",
@@ -19,7 +19,7 @@
     "Internet users": 606700,
     "Population": 19088106
   },
-  "BJ": {
+  {
     "Country Name": "Benin",
     "Calling Code": 229,
     "Official Language": "French",
@@ -29,7 +29,7 @@
     "Internet users": 200100,
     "Population": 10160556
   },
-  "BW": {
+  {
     "Country Name": "Botswana",
     "Calling Code": 267,
     "Official Language": "Setswana",
@@ -39,7 +39,7 @@
     "Internet users": 120000,
     "Population": 2155784
   },
-  "BF": {
+  {
     "Country Name": "Burkina Faso",
     "Calling Code": 226,
     "Official Language": "French",
@@ -49,7 +49,7 @@
     "Internet users": 178100,
     "Population": 18365123
   },
-  "BI": {
+   {
     "Country Name": "Burundi",
     "Calling Code": 257,
     "Official Language": "Kirundi",
@@ -59,7 +59,7 @@
     "Internet users": 157800,
     "Population": 10395931
   },
-  "CV": {
+   {
     "Country Name": "Cabo Verde",
     "Calling Code": 238,
     "Official Language": "Portuguese",
@@ -69,7 +69,7 @@
     "Internet users": 150000,
     "Population": 538535
   },
-  "CM": {
+  {
     "Country Name": "Cameroon",
     "Calling Code": 237,
     "Official Language": "Major African languages",
@@ -79,7 +79,7 @@
     "Internet users": 749600,
     "Population": 23130708
   },
-  "CF": {
+  {
     "Country Name": "Central African Republic",
     "Calling Code": 236,
     "Official Language": "French",
@@ -89,7 +89,7 @@
     "Internet users": 22600,
     "Population": 5277959
   },
-  "TD": {
+   {
     "Country Name": "Chad",
     "Calling Code": 235,
     "Official Language": "French",
@@ -99,7 +99,7 @@
     "Internet users": 168100,
     "Population": 11412107
   },
-  "KM": {
+   {
     "Country Name": "Comoros",
     "Calling Code": 269,
     "Official Language": "Arabic",
@@ -109,7 +109,7 @@
     "Internet users": 24300,
     "Population": 766865
   },
-  "CD": {
+  {
     "Country Name": "Democratic Republic of the Congo",
     "Calling Code": 243,
     "Official Language": "French",
@@ -119,7 +119,7 @@
     "Internet users": 290000,
     "Population": 77433744
   },
-  "CG": {
+  {
     "Country Name": "Republic of the Congo",
     "Calling Code": 242,
     "Official Language": "French",
@@ -538,5 +538,5 @@
     "Country Flag": "🇿🇼",
     "Internet users": 1423000,
     "Population": 13771721
-  }
-}
+  } 
+]
