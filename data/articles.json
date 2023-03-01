@@ -1,0 +1,38 @@
+[
+  {
+    "title": "How to Build a Full Stack App with Next.js 13 and Firebase",
+    "url": "https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/",
+    "description": "In this article, you will learn how to use the new Next.js 13 and Firebase database to build a full stack application.",
+    "image": "https://www.freecodecamp.org/news/content/images/size/w2000/2023/02/pexels-sevenstorm-juhaszimrus-443383--1-.jpg",
+    "author": "Spruce Emmanuel",
+    "platform": "Freecodecamp",
+    "date:": "FEBRUARY 17, 2023"
+  },
+  {
+    "title": "JavaScript DOM Tutorial – How to Build a Calculator App in JS",
+    "url": "https://www.freecodecamp.org/news/javascript-dom-build-a-calculator-app/",
+    "description": "In this article, you'll learn about the DOM along with loops and events by building a simple iOS calculator app.",
+    "image": "https://www.freecodecamp.org/news/content/images/size/w2000/2022/08/Web-capture_31-8-2022_83456_localhost.jpeg",
+    "author": "Spruce Emmanuel",
+    "platform": "Freecodecamp",
+    "date:": "SEPTEMBER 2, 2022"
+  },
+  {
+    "title": "Learn JavaScript Basics by Building a Counter Application",
+    "url": "https://www.freecodecamp.org/news/learn-javascript-by-building-a-project/",
+    "description": "We'll be taking a practical approach to learning JavaScript in this article and the ones that follow. I promise I won't bore you too much with the syntax, but rather we'll learn by building projects.",
+    "image": "https://www.freecodecamp.org/news/content/images/size/w2000/2022/08/pexels-antonio-batinic--4164418--1-.jpg",
+    "author": "Spruce Emmanuel",
+    "platform": "Freecodecamp",
+    "date:": "AUGUST 15, 2022"
+  },
+  {
+    "title": "React Components – How to Create a Search, Filter, and Pagination Component in React",
+    "url": "https://www.freecodecamp.org/news/how-to-react-components/",
+    "description": "I wrote the article 'How to Search and Filter Components in React' exactly one year ago.",
+    "image": "https://www.freecodecamp.org/news/content/images/size/w2000/2022/06/wirxeocmd6tpnn9c5oqc.jpg",
+    "author": "Spruce Emmanuel",
+    "platform": "Freecodecamp",
+    "date:": "JUNE 7, 2022"
+  }
+]
