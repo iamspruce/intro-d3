@@ -30,7 +30,7 @@ d3
 	.json(
 		"https://raw.githubusercontent.com/iamspruce/intro-d3/main/data/nigeria-states.json"
 	)
-	.then(({ data }) => {
+	.then((data) => {
 		data.forEach((d) => (d.Population = +d.info.Population));
 
 		// Scale the range of the data in the domains
@@ -95,7 +95,7 @@ Promise.all([
 		"https://raw.githubusercontent.com/iamspruce/intro-d3/main/data/nigeria-states.json"
 	)
 ]).then(([topoJSONdata, countryData]) => {
-	countryData.data.forEach((d) => {
+	countryData.forEach((d) => {
 		d.info.Longitude = +d.info.Longitude;
 		d.info.Latitude = +d.info.Latitude;
 	});
