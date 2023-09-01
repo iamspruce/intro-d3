@@ -1,4 +1,6 @@
 [
+    data: {
+        
     {
       "info": {
         "officialName": "Abia",
@@ -610,6 +612,7 @@
         "Website": "services.gov.ng/zamfara"
       },
       "Name": "zamfara"
+    }
     }
   ]
 
