@@ -1,4 +1,4 @@
-data: [
+{data: [
     {
       "info": {
         "officialName": "Abia",
@@ -611,6 +611,5 @@ data: [
       },
       "Name": "zamfara"
     }
-  ]
-
-
+  ],
+}
